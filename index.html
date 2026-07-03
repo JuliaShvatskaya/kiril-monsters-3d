@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNA Monster Arena 3D</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <canvas id="gameCanvas" aria-label="DNA Monster Arena 3D game canvas"></canvas>
+
+    <div id="hud">
+      <div class="brand">DNA Monster Arena 3D</div>
+      <div class="stats panel">
+        <div>Level <strong id="levelText">1</strong> / 150</div>
+        <div>HP <strong id="hpText">500 / 500</strong></div>
+        <div class="dna-row"><span class="dna-icon"><span></span></span> Super DNA <strong id="dnaText">0</strong></div>
+        <div>Weapon <strong id="weaponText">Axe</strong></div>
+      </div>
+      <button id="superButton" class="super-button">SUPER<br /><small id="superHint">Q</small></button>
+      <div id="message" class="message">WASD or click ground to move. Space attacks.</div>
+    </div>
+
+    <aside id="shop" class="panel">
+      <h2>Weapon Shop</h2>
+      <div id="shopItems"></div>
+    </aside>
+
+    <aside id="leaderboard" class="panel">
+      <h2>Local Leaderboard</h2>
+      <ol id="leaderboardList"></ol>
+    </aside>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="overlay-card">
+        <h1 id="overlayTitle">Game Over</h1>
+        <p id="overlayText"></p>
+        <button id="restartButton">Restart</button>
+      </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
