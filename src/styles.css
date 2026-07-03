@@ -1,0 +1,26 @@
+html, body { margin: 0; height: 100%; overflow: hidden; font-family: system-ui, Arial, sans-serif; background: #14213d; color: white; }
+#gameCanvas { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; }
+.panel { background: rgba(10, 20, 45, 0.82); border: 2px solid rgba(255,255,255,.22); border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,.28); backdrop-filter: blur(6px); }
+#hud { position: fixed; top: 14px; left: 14px; display: grid; gap: 10px; pointer-events: none; }
+.brand { font-weight: 900; font-size: 24px; text-shadow: 0 3px 6px #000; }
+.stats { padding: 12px 14px; line-height: 1.7; min-width: 210px; }
+.dna-row { display: flex; align-items: center; gap: 7px; }
+.dna-icon { width: 23px; height: 23px; border-radius: 50%; background: radial-gradient(circle, #fff7a5 0 27%, #ffd000 28% 48%, #31d7ff 49% 100%); display: inline-grid; place-items: center; box-shadow: 0 0 12px #49f3ff; }
+.dna-icon span { width: 8px; height: 8px; background: #fff052; border-radius: 50%; }
+.message { max-width: 390px; padding: 10px 12px; border-radius: 12px; background: rgba(255, 206, 69, .92); color: #201500; font-weight: 700; }
+.super-button { pointer-events: auto; width: 116px; height: 76px; border: 0; border-radius: 18px; font-size: 22px; font-weight: 1000; color: white; background: linear-gradient(135deg, #7b2ff7, #f107a3); box-shadow: 0 7px 0 #53146f, 0 0 22px rgba(241,7,163,.65); cursor: pointer; }
+.super-button:disabled { filter: grayscale(1); opacity: .6; cursor: not-allowed; }
+#shop { position: fixed; top: 14px; right: 14px; width: 265px; padding: 14px; }
+#leaderboard { position: fixed; bottom: 14px; right: 14px; width: 265px; padding: 14px; }
+h2 { margin: 0 0 10px; font-size: 18px; }
+.shop-item { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; padding: 9px; margin: 8px 0; border-radius: 10px; background: rgba(255,255,255,.1); }
+.shop-item .desc { grid-column: 1 / -1; color: #cde1ff; font-size: 12px; }
+.shop-item button { padding: 7px 10px; border: 0; border-radius: 9px; font-weight: 800; cursor: pointer; background: #52ffa8; color: #06351d; }
+.shop-item button:disabled { background: #6d7480; color: #dce2e8; cursor: not-allowed; }
+.current { outline: 2px solid #ffea61; }
+#leaderboardList { margin: 0; padding-left: 24px; line-height: 1.7; }
+.overlay { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,.62); }
+.hidden { display: none; }
+.overlay-card { width: min(520px, calc(100vw - 32px)); padding: 34px; text-align: center; border-radius: 24px; background: linear-gradient(180deg, #263b75, #151b36); border: 3px solid #fff; box-shadow: 0 20px 60px #000; }
+.overlay-card h1 { font-size: 48px; margin: 0 0 12px; }
+.overlay-card button { font-size: 22px; font-weight: 900; padding: 13px 28px; border-radius: 14px; border: 0; background: #ffdd55; cursor: pointer; }
